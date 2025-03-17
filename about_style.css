@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A31621; /* Deep Red */
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* About Container */
+.about-container {
+    max-width: 1200px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FCF7F8;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #FCF7F8;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Cards Layout */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.card {
+    background: #FCF7F8; /* Snow */
+    color: #A31621; /* Deep Red text */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Skills & Education Lists */
+.skills, .education {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .education li {
+ 
+    color: #A31621; /* Snow */
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.skills li:hover, .education li:hover {
+    transform: scale(1.05);
+    /* Slightly lighter Deep Red */
+}
+
+/* Contact */
+.contact {
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #FCF7F8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #FCF7F8;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
