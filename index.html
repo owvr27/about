@@ -3,59 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Omar Ahmed</title>
-    <link rel="icon" type="image/png" href="/images/pngegg.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>About Me - Omar Ahmed Abdelsalam</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #A31621; /* Red background */
+            color: #FFFFFF; /* White text */
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .content {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Space between text and image */
+            align-items: center; /* Center vertically */
+            gap: 30px;
+        }
+        
+        .text-content {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .image-container {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 250px; /* Larger width */
+            height: 250px; /* Larger height */
+            border-radius: 15px; /* Rectangular with rounded corners */
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* No border, kept shadow */
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: #FFFFFF; /* White heading */
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #FFFFFF; /* White text */
+        }
+        
+        strong {
+            font-weight: 700;
+            color: #FFFFFF; /* White for strong text */
+        }
+        
+        .tech-columns {
+            display: flex;
+            justify-content: flex-start;
+            gap: 50px; /* Space between the two columns */
+            margin: 1.5rem 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        
+        .tech-column {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .tech-column li {
+            font-size: 1.1rem;
+            color: #FFFFFF;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .tech-column li:before {
+            content: "›"; /* Custom bullet */
+            color: #FFFFFF; /* White bullet */
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .text-content {
+                text-align: center;
+            }
+            
+            .image-container {
+                margin-top: 20px; /* Space above image on mobile */
+            }
+            
+            .profile-img {
+                width: 200px; /* Adjusted for smaller screens */
+                height: 200px;
+            }
+            
+            .tech-columns {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <div class="about-container">
-        <header>
-            <h1>About Me</h1>
-            <p class="tagline">Machine Learning  | Data | Software Engineer</p>
-        </header>
-
-        <section class="about-content">
-           
-            <!-- Cards Section -->
-            <div class="card-container">
-                
-                <!-- My Journey Card -->
-                <div class="card">
-                    <h2>🚀 My Journey</h2>
-                    <p>I started my academic journey at <strong>Al-Azhar Schools</strong>, where I built a solid foundation. My path in <strong>software engineering</strong> has been a challenging but rewarding experience, filled with continuous learning and problem-solving.</p>
-                </div>
-
-                <!-- Education Card -->
-                <div class="card">
-                    <h2>🎓 Education</h2>
-                    <ul class="education">
-                        <li>✔ <strong>Software Engineering</strong> - Amity University & Polytechnic of Egypt</li>
-                        <li>✔ <strong>Entrepreneurship & Law</strong> - Additional Studies</li>
+    <div class="content">
+        <div class="text-content">
+            <h1>/ about me</h1>
+            
+            <p>
+                My name is <strong>Omar Ahmed Abdelsalam</strong>. I am a top achiever at <strong>SU Tech - Polytechnic of Egypt</strong>, 
+                currently studying Data and AI. I previously studied at <strong>Al-Azhar High School</strong>.
+            </p>
+            
+            <p>Here are some technologies I have been working with:</p>
+            
+            <ul class="tech-columns">
+                <li class="tech-column">
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
                     </ul>
-                </div>
-
-                <!-- Skills Card -->
-                <div class="card">
-                    <h2>🛠 Skills & Expertise</h2>
-                    <ul class="skills">
-                        <li><strong>💻 Programming:</strong> Python, Java, C++</li>
-                        <li><strong>🌐 Web Development:</strong> HTML, CSS, JavaScript</li>
-                        <li><strong>🔌 Network Engineering:</strong> Basic Networking Concepts</li>
-                        <li><strong>🛠 Software Tools:</strong> AutoCAD 2D, AutoCAD Electrical</li>
-                        <li><strong>🗣 Languages:</strong> Fluent in English & Arabic</li>
+                </li>
+                <li class="tech-column">
+                    <ul>
+                        <li>Networking</li>
+                        <li>MySQL</li>
+                        <li>AutoCAD</li>
+                        <li>CSS</li>
                     </ul>
-                </div>
-
-            </div>
-
-            <div class="contact">
-             
-            </div>
-
-        </section>
+                </li>
+            </ul>
+            
+            <p>
+                Outside of my studies, I'm interested in gaming, swimming, and football.
+            </p>
+        </div>
+        
+        <!-- Photo placed in the middle of the page -->
+        <div class="image-container">
+            <img src="/images/WhatsApp Image 2025-05-28 at 14.11.11_8374320d.jpg" alt="Omar Ahmed Abdelsalam" class="profile-img">
+        </div>
     </div>
-
 </body>
 </html>
