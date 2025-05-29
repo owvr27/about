@@ -4,134 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Omar Ahmed Abdelsalam</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #A31621; /* Red background */
-            color: #FFFFFF; /* White text */
-            margin: 0;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .content {
-            max-width: 800px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between; /* Space between text and image */
-            align-items: center; /* Center vertically */
-            gap: 30px;
-        }
-        
-        .text-content {
-            flex: 1;
-            text-align: left;
-        }
-        
-        .image-container {
-            flex: 0 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .profile-img {
-            width: 250px; /* Larger width */
-            height: 250px; /* Larger height */
-            border-radius: 15px; /* Rectangular with rounded corners */
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* No border, kept shadow */
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            color: #FFFFFF; /* White heading */
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            color: #FFFFFF; /* White text */
-        }
-        
-        strong {
-            font-weight: 700;
-            color: #FFFFFF; /* White for strong text */
-        }
-        
-        .tech-columns {
-            display: flex;
-            justify-content: flex-start;
-            gap: 50px; /* Space between the two columns */
-            margin: 1.5rem 0;
-            padding-left: 0;
-            list-style-type: none;
-        }
-        
-        .tech-column {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        
-        .tech-column li {
-            font-size: 1.1rem;
-            color: #FFFFFF;
-            position: relative;
-            padding-left: 15px;
-        }
-        
-        .tech-column li:before {
-            content: "›"; /* Custom bullet */
-            color: #FFFFFF; /* White bullet */
-            position: absolute;
-            left: 0;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
-            }
-            
-            .content {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .text-content {
-                text-align: center;
-            }
-            
-            .image-container {
-                margin-top: 20px; /* Space above image on mobile */
-            }
-            
-            .profile-img {
-                width: 200px; /* Adjusted for smaller screens */
-                height: 200px;
-            }
-            
-            .tech-columns {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main Content -->
     <div class="content">
         <div class="text-content">
             <h1>/ about me</h1>
             
             <p>
-                My name is <strong>Omar Ahmed Abdelsalam</strong>. I am a top achiever at <strong>SU Tech - Polytechnic of Egypt</strong>, 
-                currently studying Data and AI. I previously studied at <strong>Al-Azhar High School</strong>.
+                My name is <strong>Omar Ahmed Abdelsalam</strong>. I am a top achiever at <strong><br>SU Tech - Polytechnic of Egypt</strong>, 
+                currently studying Data and AI.<br>I previously studied at <strong>Al-Azhar High School</strong>.
             </p>
             
             <p>Here are some technologies I have been working with:</p>
@@ -160,7 +43,6 @@
             </p>
         </div>
         
-        <!-- Photo placed in the middle of the page -->
         <div class="image-container">
             <img src="WhatsApp Image 2025-05-28 at 14.11.11_8374320d.jpg" alt="Omar Ahmed Abdelsalam" class="profile-img">
         </div>
